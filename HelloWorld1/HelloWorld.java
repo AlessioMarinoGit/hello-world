@@ -18,7 +18,7 @@ public class HelloWorld
         String string1 = "I am a string";
         String string2 = string1;
         String string3 = "I am also a string";
-        boolean stringsEqual = (string1 == string3);
+        int stringsEqual = (string1.compareTo(string3));
         
         System.out.println(string1);
         System.out.println(string2);
