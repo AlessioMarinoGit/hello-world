@@ -42,5 +42,66 @@ public class HelloWorld
                 System.out.print("-");
             }
         }
+    }    
+    
+    int a = 5;
+    int b = 2;
+    int c = 1;
+    int d = -8;
+    
+    public void run() {
+        System.out.println("Hello World!");
+        
+        if (a == 5) {
+            System.out.println("SUCCESS");
+        } else {
+            System.out.println("FAILURE");      
+        }
+        if (b == 2) {
+            System.out.println("SUCCESS");
+        } else {
+            System.out.println("FAILURE");      
+        }
+        if (c != 1) {
+            System.out.println("SUCCESS");
+        } else {
+            System.out.println("FAILURE");      
+        }
+        if ( (d == -8) && (a == 4) ) {
+            System.out.println("SUCCESS");
+        } else {
+            System.out.println("FAILURE");      
+        }
+    }
+
+    public static void mainifstates (String[] argss) {
+        HelloWorld hw = new HelloWorld();
+        hw.run();
+
+    }
+    
+    public void runWhile() {
+        int i = 0;
+        int k = 10;
+        
+        while (i < 15) {
+            i++;
+            System.out.println("i is " + i + " but is less than 15");
+        }
+        while (k > 5) {
+            k--;
+            System.out.println("k is " + k + " but is greater than 5");
+        }
+        while ( (a < 10) && (b <= 20) ) {
+            a++;
+            b++;
+            System.out.println(b);
+            System.out.println(a);
+        }
+    }
+    
+    public static void mainwhileloops (String[] args) {
+        HelloWorld hw = new HelloWorld();
+        hw.runWhile();
     }
 }
