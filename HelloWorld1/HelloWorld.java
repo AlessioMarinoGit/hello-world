@@ -104,4 +104,32 @@ public class HelloWorld
         HelloWorld hw = new HelloWorld();
         hw.runWhile();
     }
+    
+    
+    public void runDo() {
+        int i = 0;
+        int k = 10;
+        
+        do {
+            i++;
+            System.out.println("i is " + i + " but is less than 15");
+        } while (i < 15);
+        do {
+            k--;
+            System.out.println("k is " + k + " but is greater than 5");
+        } while (k > 5);
+        do {
+            a++;
+            b++;
+            System.out.println(b);
+            System.out.println(a);
+        } while ( (a < 10) && (b <= 20) );
+    }
+    
+    public static void maindoloops (String[] args) {
+        HelloWorld hw = new HelloWorld();
+        hw.runDo();
+    }
+    
+    
 }
